@@ -6,8 +6,13 @@ FirstMatrixWindow::FirstMatrixWindow(QWidget *parent) :
     ui(new Ui::FirstMatrixWindow)
 {
     ui->setupUi(this);
+
+    m_delegate = new Delegate(this);
+
     m_model = new QStandardItemModel( 3, 3, this);
     ui->firstMatrixTable->setModel( m_model );
+    ui->firstMatrixTable->setItemDelegate( m_delegate );
+
     clearMatrix();
 }
 

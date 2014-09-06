@@ -16,12 +16,14 @@ SOURCES += main.cpp\
         MainWindow.cpp \
     FirstMatrixWindow.cpp \
     SecondMatrixWindow.cpp \
-    ResultMatrixWindow.cpp
+    ResultMatrixWindow.cpp \
+    Delegate.cpp
 
 HEADERS  += MainWindow.h \
     FirstMatrixWindow.h \
     SecondMatrixWindow.h \
-    ResultMatrixWindow.h
+    ResultMatrixWindow.h \
+    Delegate.h
 
 FORMS    += MainWindow.ui \
     FirstMatrixWindow.ui \

@@ -6,8 +6,13 @@ ResultMatrixWindow::ResultMatrixWindow(QWidget *parent) :
     ui(new Ui::ResultMatrixWindow)
 {
     ui->setupUi(this);
+
+    m_delegate = new Delegate(this);
+
     m_model = new QStandardItemModel( 3, 3, this);
     ui->resultTable->setModel( m_model );
+    ui->resultTable->setItemDelegate( m_delegate );
+
     clearMatrix();
 }
 

@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QStandardItemModel>
 #include <QMatrix3x3>
+#include "Delegate.h"
 
 namespace Ui {
     class SecondMatrixWindow;
@@ -23,6 +24,7 @@ private:
     void clearMatrix();
     Ui::SecondMatrixWindow *ui;
     QStandardItemModel *m_model;
+    Delegate *m_delegate;
 };
 
 #endif // SECONDMATRIXWINDOW_H
